@@ -1,4 +1,17 @@
 plugins {
-    id("com.android.application") version "9.4.0" apply false
-    id("org.jetbrains.kotlin.android") version "2.4.10" apply false
+    id("com.android.application")
+    id("org.jetbrains.kotlin.android")
+}
+
+android {
+    namespace = "com.muslimcompanion"
+    compileSdk = 36
+
+    defaultConfig {
+        applicationId = "com.muslimcompanion"
+        minSdk = 24
+        targetSdk = 36
+        versionCode = 1
+        versionName = "1.0"
+    }
 }
